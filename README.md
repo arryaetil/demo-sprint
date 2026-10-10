@@ -10,24 +10,51 @@ De skill staat in [SKILL.md](SKILL.md). Uitgebreidere ontwerpkeuzes staan in [re
 
 Tijdens de bouw stuurt **TasteSkill / design-taste-frontend** het ontwerp. **Magic UI, Kokonut UI, React Bits en Bklit** zijn bewuste componentkeuzes; **GSAP, Lenis, Motion en anime.js** zijn opties voor gerichte beweging. De skill legt per library uit wanneer je die inzet en hoe je overbodige effecten voorkomt. Daarna volgen de TasteSkill preflight, **Vercel Web Interface Guidelines** en **Playwright** browsercontrole. Zie [de volledige ontwerpstappen](references/design-and-build.md).
 
-## Compleet overzicht van genoemde middelen
+## Alle skills en hun repositories
 
-Dit overzicht is ook de checklist voor een partner die de skill op een andere computer gebruikt. `demo-sprint` is de workflow; de genoemde externe skills, diensten en libraries worden niet automatisch meegeleverd of geïnstalleerd.
+Dit is de installatielijst voor jou en je partner. Een link opent de **bronrepository** of de betreffende skillmap. `demo-sprint` installeert deze andere skills niet automatisch.
 
-| Soort | Namen | Rol |
+| Skill of bron | Repository | Gebruik |
 | --- | --- | --- |
-| Ontwerpsturing | **TasteSkill / `design-taste-frontend`** | Design read, `VARIANCE`/`MOTION`/`DENSITY`, anti-patronen en preflight. |
-| Designsystemen | **`design-md-library`**, **[Awesome Design MD](https://github.com/VoltAgent/awesome-design-md)**, **[Awesome Design Skills](https://github.com/bergside/awesome-design-skills)** | Eén of twee passende `DESIGN.md`/`SKILL.md`-referenties lezen en vertalen naar een eigen merkstijl. |
-| Visuele referenties | **[Refero](https://refero.design/) MCP**, **[details.so](https://details.so/)**, **[Design Spells](https://designspells.com/)**, **`image-to-code`** | Sectiepatronen, afwerking en eventueel analyse van een door de opdrachtgever aangeleverde afbeelding. |
-| Logo | **`logo-design`** | Als het bedrijf geen bruikbaar logo heeft: drie zwart-witconcepten, vectorcontrole, keuze door eigenaar, daarna varianten en gebruiksgids. Deze skill is een aparte dependency. |
-| Tekst | **`humanizer`** | Natuurlijke webtekst zonder nieuwe claims of gewijzigde feiten. |
-| Animatieskills | **`emilkowal-animations` / `emil-design-eng`**, **`find-animation-opportunities`**, **`review-animations`** | Beslissen waar beweging helpt en duur, easing en feedback beoordelen. |
-| Componenten | **[Magic UI](https://magicui.design/)**, **[Kokonut UI](https://kokonutui.com/)**, **[React Bits](https://reactbits.dev/)**, **Bklit** | Selectief een passend component of dataweergave inzetten. |
-| Animatielibraries | **[GSAP](https://gsap.com/)**, **[Lenis](https://lenis.darkroom.engineering/)**, **[Motion](https://motion.dev/)**, **[anime.js](https://animejs.com/)** | Alleen bij een concreet doel; één animatie-engine per componentboom. |
-| Controle | **[Vercel Web Interface Guidelines](https://github.com/vercel-labs/web-interface-guidelines) / `web-design-guidelines`**, **[Playwright CLI](https://github.com/microsoft/playwright-cli)**, **Python Playwright**, **`scripts/live_check.py`** | Ontwerp-, toegankelijkheids- en browsercontrole. |
-| Oplevering | **GitHub**, **Lovable** (als de demo daar vandaan komt), **Railway** (bij publicatie) | Code overdragen en de demo bereikbaar maken. |
+| TasteSkill / `design-taste-frontend` | [tasteskill/tasteskill](https://github.com/tasteskill/tasteskill) | Design read, de drie dials, anti-patronen en preflight. De lokaal gebruikte variant kan afwijken van de huidige repo. |
+| `design-md-library` | [Publieke design-md-skill](https://github.com/arumwu/design-md-skill) + [onderliggende Awesome DESIGN.md-bibliotheek](https://github.com/VoltAgent/awesome-design-md) | De oorspronkelijke notities geven geen verifieerbare repo voor de *exacte* skillnaam; dit is een functioneel publiek alternatief. |
+| Awesome Design MD | [VoltAgent/awesome-design-md](https://github.com/VoltAgent/awesome-design-md) | Merkgebonden `DESIGN.md`-referenties. |
+| Awesome Design Skills | [bergside/awesome-design-skills](https://github.com/bergside/awesome-design-skills) | `SKILL.md` + `DESIGN.md` per stijlrichting. |
+| `image-to-code` | [tasteskill/tasteskill – image-to-code](https://github.com/tasteskill/tasteskill/tree/main/image-to-code) | Een visuele referentie analyseren en in code vertalen. |
+| **`logo-design`** | **[kaankiziltug/logo-design-skill](https://github.com/kaankiziltug/logo-design-skill/tree/main/skills/logo-design)** | Bij ontbrekend of zwak logo: drie concepten, SVG-controle, keuze eigenaar, dan varianten en gebruiksgids. Dit is de repository van de scripts uit de oorspronkelijke workflow. |
+| `humanizer` | [blader/humanizer](https://github.com/blader/humanizer) | Webtekst natuurlijker maken zonder feiten te wijzigen. |
+| `emil-design-eng` | [emilkowalski/skills – emil-design-eng](https://github.com/emilkowalski/skills/tree/main/skills/emil-design-eng) | Interactie- en animatiekwaliteit. |
+| `find-animation-opportunities` | [emilkowalski/skills – find-animation-opportunities](https://github.com/emilkowalski/skills/tree/main/skills/find-animation-opportunities) | Bepalen waar beweging nuttig is. |
+| `review-animations` | [emilkowalski/skills – review-animations](https://github.com/emilkowalski/skills/tree/main/skills/review-animations) | Bestaande animaties beoordelen. |
+| `emilkowal-animations` | [Emil Kowalski's publieke skillverzameling](https://github.com/emilkowalski/skills) | De lokaal aanwezige skill is een aparte variant; de exacte publieke bron daarvan is niet vastgesteld. Gebruik de gelinkte `emil-design-eng` als verifieerbaar alternatief. |
+| `web-design-guidelines` | [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills/tree/main/skills/web-design-guidelines) + [richtlijnen](https://github.com/vercel-labs/web-interface-guidelines) | UI-, toegankelijkheids- en interactiecontrole. |
+| `playwright-cli` | [microsoft/playwright-cli](https://github.com/microsoft/playwright-cli/tree/main/skills/playwright-cli) | Browsercontrole en screenshots. |
 
-De stappen en beslisregels per middel staan in [references/design-and-build.md](references/design-and-build.md). Sommige namen komen uit de oorspronkelijke projectworkflow en zijn mogelijk niet op de computer van de partner geïnstalleerd. Controleer de aanwezigheid voordat je ze gebruikt; claim niet dat een ontbrekende skill is uitgevoerd.
+## Referenties en MCP
+
+| Middel | Bron |
+| --- | --- |
+| Refero MCP | [Refero MCP](https://refero.design/mcp) voor zoekbare stijlen en schermen. |
+| details.so | [details.so](https://details.so/) voor hero, navigatie, footer en overgangen. |
+| Design Spells | [designspells.com](https://designspells.com/) voor een passend interactiedetail. |
+
+Dit zijn diensten of inspiratiebronnen, geen meegeleverde GitHub-skills. De stappen voor Refero staan in [references/design-and-build.md](references/design-and-build.md).
+
+## Libraries en componenten: bronrepositories
+
+| Middel | Repository | Rol |
+| --- | --- | --- |
+| Magic UI | [magicuidesign/magicui](https://github.com/magicuidesign/magicui) | Animatie- en interfacecomponenten. |
+| Kokonut UI | [kokonut-labs/kokonutui](https://github.com/kokonut-labs/kokonutui) | Interfacecomponenten. |
+| React Bits | [DavidHDev/react-bits](https://github.com/DavidHDev/react-bits) | Interactieve React-componenten. |
+| Bklit UI | [bklit/bklit-ui](https://github.com/bklit/bklit-ui) | Grafieken en datavisualisatie. |
+| GSAP | [greensock/GSAP](https://github.com/greensock/GSAP) | Tijdlijnen en gerichte scrollanimatie. |
+| Lenis | [darkroomengineering/lenis](https://github.com/darkroomengineering/lenis) | Vloeiend scrollen bij echte scrollvertelling. |
+| Motion | [motiondivision/motion](https://github.com/motiondivision/motion) | React-animaties en toestandswisselingen. |
+| anime.js | [juliangarnier/anime](https://github.com/juliangarnier/anime) | Lichte DOM- en SVG-animaties. |
+| Python Playwright | [microsoft/playwright-python](https://github.com/microsoft/playwright-python) | Motor achter het meegeleverde [live-controlescript](scripts/live_check.py). |
+
+De volledige [ontwerpstappen en beslisregels](references/design-and-build.md) vertellen wanneer je deze middelen inzet. GitHub, Lovable en Railway zijn platforms voor overdracht en publicatie, geen skills of componentlibraries. Controleer per computer welke externe skills geïnstalleerd zijn; zeg niet dat een ontbrekende skill is uitgevoerd.
 
 De skill kan automatisch worden gekozen wanneer je om een pitchdemo of groot herontwerp vraagt, of expliciet worden aangeroepen als `demo-sprint`. Publicatie naar GitHub of Railway gebeurt alleen binnen de toestemming van de lopende opdracht.
 

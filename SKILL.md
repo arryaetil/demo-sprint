@@ -7,6 +7,8 @@ description: Onderzoek een bestaand klein bedrijf en maak of verbeter een overtu
 
 Maak een demo die een eigenaar kan beoordelen: herkenbaar bedrijf, echt werk, duidelijke contactroute, één heldere ontwerpgedachte en een werkende preview. Gebruik dit als workflow, niet als toestemming om accounts, domeinen of live websites te wijzigen. Volg de actuele opdracht, bestaande afspraken en projectinstructies.
 
+De [README](README.md#alle-skills-en-hun-repositories) bevat de bronrepository voor elke genoemde externe skill en library, zodat deze workflow op een andere computer te installeren is.
+
 ## 1. Onderzoek de bron
 
 - Bekijk de bestaande website en alle relevante paginatypen: diensten, prijzen/PDF's, werkgebied, reviews, contact, openingstijden, team, projecten en juridische pagina's. Noteer bronlinks en onzekerheden. Controleer veranderlijke feiten opnieuw vlak voor publicatie.
@@ -30,7 +32,7 @@ Kopieer geen site of merkstijl letterlijk.
 
 ### Logo wanneer het bedrijf er geen heeft
 
-Controleer eerst of er een bruikbaar eigen logo is. Is er geen logo of alleen een zwak sjabloonlogo en valt een nieuw logo binnen de opdracht, gebruik dan de **`logo-design`-skill**. Maak drie zwart-witconcepten, controleer de SVG's en toon een conceptoverzicht. Wacht op een keuze voordat je kleurvarianten, favicon en gebruiksgids maakt of het logo in de demo als merk inzet. Houd het zichtbaar een concept totdat de eigenaar het goedkeurt. Als `logo-design` op de computer niet is geïnstalleerd, meld dat en vraag naar de skillbron of volg dezelfde stappen met beschikbare vectorhulpmiddelen; doe niet alsof de skill aanwezig is.
+Controleer eerst of er een bruikbaar eigen logo is. Is er geen logo of alleen een zwak sjabloonlogo en valt een nieuw logo binnen de opdracht, gebruik dan de **[`logo-design`-skill](https://github.com/kaankiziltug/logo-design-skill/tree/main/skills/logo-design)**. Maak drie zwart-witconcepten, controleer de SVG's en toon een conceptoverzicht. Wacht op een keuze voordat je kleurvarianten, favicon en gebruiksgids maakt of het logo in de demo als merk inzet. Houd het zichtbaar een concept totdat de eigenaar het goedkeurt. Als `logo-design` op de computer niet is geïnstalleerd, installeer hem uit die repository als de omgeving en opdracht dat toelaten; doe niet alsof de skill aanwezig is.
 
 ## 3. Bouw de demo
 
