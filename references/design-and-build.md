@@ -29,7 +29,7 @@ Bekijk daarnaast [details.so](https://details.so/) voor hero, navigatie, footer 
 
 ## 3. Logo, inhoud en bouw
 
-Als een bestaand logo bruikbaar is, behoud het. Als er geen goed logo is en een nieuw logo binnen de opdracht valt, gebruik `logo-design` als die skill aanwezig is: drie zwart-witconcepten, controle van de SVG's, één conceptoverzicht, dan keuze van de opdrachtgever; werk pas daarna varianten en een korte gebruiksgids uit. Houd het als concept tot de eigenaar het goedkeurt.
+Als een bestaand logo bruikbaar is, behoud het. Als er geen goed logo is en een nieuw logo binnen de opdracht valt, gebruik de aparte **`logo-design`-skill** als die geïnstalleerd is. De volgorde uit de oorspronkelijke workflow is: behoud herkenbare merkelementen, maak drie zwart-witconcepten, controleer de SVG's technisch, toon één conceptoverzicht, wacht op de keuze van de eigenaar en maak dan pas kleur- en monochrome varianten, faviconbestanden, een presentatiebord en een korte gebruiksgids. Gebruik op het presentatiebord de echte bedrijfsnaam en contactgegevens. Houd het als concept tot de eigenaar het goedkeurt; laat officieel gebruik pas volgen na controle van eventuele merkrechten. De `logo-design`-skill en zijn hulpscripts zijn niet meegeleverd in deze repository. Controleer de installatie op iedere computer en meld ontbrekende tooling eerlijk.
 
 Bouw in de bestaande stack. Gebruik echte en rechtmatig bruikbare foto's en reviews; vermeld onzekerheden. `humanizer` mag formuleringen natuurlijker maken, maar geen feiten veranderen. Houd plaatsen en diensten in afzonderlijke lijsten. Gebruik één hoofdkleur als accent, een samenhangend systeem voor hoeken en een duidelijke contactroute.
 

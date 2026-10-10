@@ -24,12 +24,17 @@ Toon eerst een korte **design read** met vier antwoorden: (1) wat moet de demo o
 - **`design-md-library` en Awesome Design** (`awesome-design-md` en `awesome-design-skills`) om één of twee passende `DESIGN.md`/`SKILL.md` referenties te lezen en om te zetten naar een eigen, merkgebonden ontwerpsysteem.
 - **Refero MCP** voor stijlrichtingen en sectiepatronen: zoek met `refero_search_styles` vanuit 3–5 invalshoeken en bekijk de beste 3 met `refero_get_style`; zoek schermen per relevante sectie met `refero_search_screens` en bekijk 3–6 volledige voorbeelden met `refero_get_screen_image`.
 - **details.so** voor hero, navigatie, footer en overgangen; **designspells.com** voor één zorgvuldig gekozen interactiedetail.
+- **`image-to-code`** wanneer de opdrachtgever een concrete visuele referentie aanlevert en die nauwkeurig vertaald moet worden naar de demo.
 
-Kopieer geen site of merkstijl letterlijk. Als een logo ontbreekt of zwak is, bied eerst concepten aan en wacht op de keuze voordat je het als merk gebruikt. Label een onbevestigd logo als concept.
+Kopieer geen site of merkstijl letterlijk.
+
+### Logo wanneer het bedrijf er geen heeft
+
+Controleer eerst of er een bruikbaar eigen logo is. Is er geen logo of alleen een zwak sjabloonlogo en valt een nieuw logo binnen de opdracht, gebruik dan de **`logo-design`-skill**. Maak drie zwart-witconcepten, controleer de SVG's en toon een conceptoverzicht. Wacht op een keuze voordat je kleurvarianten, favicon en gebruiksgids maakt of het logo in de demo als merk inzet. Houd het zichtbaar een concept totdat de eigenaar het goedkeurt. Als `logo-design` op de computer niet is geïnstalleerd, meld dat en vraag naar de skillbron of volg dezelfde stappen met beschikbare vectorhulpmiddelen; doe niet alsof de skill aanwezig is.
 
 ## 3. Bouw de demo
 
-- Werk in de bestaande stack als er een project is. Maak echte, taakgerichte pagina-inhoud; laat een tekst-herschrijfskill alleen de formulering verbeteren, niet de feiten veranderen.
+- Werk in de bestaande stack als er een project is. Maak echte, taakgerichte pagina-inhoud; gebruik **`humanizer`** voor natuurlijkere formulering zonder feiten te veranderen.
 - Gebruik de beste rechtmatig bruikbare afbeeldingen op passende resolutie. Geef beelden beschrijvende alt-tekst, afmetingen en lazy loading onder de eerste schermhoogte. Documenteer herkomst en beperkingen.
 - Houd contact bereikbaar. Maak demoformulieren duidelijk herkenbaar als demo en verstuur zonder backend geen gegevens. Zet conceptstatus zichtbaar bovenaan en onderaan; zet demo's op `noindex` tenzij de gebruiker anders vraagt.
 - Bouw met **TasteSkill / `design-taste-frontend`**. Gebruik **`emilkowal-animations`** (of beschikbaar equivalent) voor timing en feedback, en **`find-animation-opportunities` → `review-animations`** indien aanwezig. Kies bewust uit **GSAP, Lenis, Motion, anime.js, Magic UI, Kokonut UI, React Bits en Bklit** volgens de beslisregels in [references/design-and-build.md](references/design-and-build.md). Gebruik één animatie-engine per componentboom, maximaal 2–3 opvallende effecten per pagina en respecteer `prefers-reduced-motion`.
