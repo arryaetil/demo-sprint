@@ -16,21 +16,28 @@ Maak een demo die een eigenaar kan beoordelen: herkenbaar bedrijf, echt werk, du
 
 ## 2. Kies de richting
 
-Toon de gebruiker kort: wat de demo moet overbrengen, voor wie hij is, drie sfeerwoorden en één zin over de visuele richting. Geef daarna concrete keuzes voor fotografie, typografie, kleur en compositie. Gebruik referenties als inspiratie, nooit als kopie. Als een logo ontbreekt of zwak is, bied eerst concepten aan en wacht op de keuze voordat je het als merk gebruikt. Label een onbevestigd logo als concept.
+Toon eerst een korte **design read** met vier antwoorden: (1) wat moet de demo overbrengen, (2) wie is het bedrijf en wie zijn de klanten, (3) drie sfeerwoorden, (4) de ontwerpkeuze met TasteSkill-dials `VARIANCE`, `MOTION` en `DENSITY`. Geef concrete keuzes voor fotografie, typografie, kleur en compositie.
 
-Lees [references/design-and-build.md](references/design-and-build.md) wanneer je een nieuwe richting kiest of een bestaande demo flink herontwerpt. Gebruik aanwezige design-skills en bronnen alleen als ze de opdracht helpen; de inhoud van de klant is leidend.
+**Referentieonderzoek is een verplichte ontwerpstap.** Lees [references/design-and-build.md](references/design-and-build.md) volledig voordat je een nieuwe richting of groot herontwerp uitwerkt. Gebruik de volgende bronnen en noteer per gekozen patroon welke referentie welk ontwerpbesluit beïnvloedt:
+
+- **TasteSkill / `design-taste-frontend`** voor design read, dials, ontwerpkritiek en de preflightcheck.
+- **`design-md-library` en Awesome Design** (`awesome-design-md` en `awesome-design-skills`) om één of twee passende `DESIGN.md`/`SKILL.md` referenties te lezen en om te zetten naar een eigen, merkgebonden ontwerpsysteem.
+- **Refero MCP** voor stijlrichtingen en sectiepatronen: zoek met `refero_search_styles` vanuit 3–5 invalshoeken en bekijk de beste 3 met `refero_get_style`; zoek schermen per relevante sectie met `refero_search_screens` en bekijk 3–6 volledige voorbeelden met `refero_get_screen_image`.
+- **details.so** voor hero, navigatie, footer en overgangen; **designspells.com** voor één zorgvuldig gekozen interactiedetail.
+
+Kopieer geen site of merkstijl letterlijk. Als een logo ontbreekt of zwak is, bied eerst concepten aan en wacht op de keuze voordat je het als merk gebruikt. Label een onbevestigd logo als concept.
 
 ## 3. Bouw de demo
 
 - Werk in de bestaande stack als er een project is. Maak echte, taakgerichte pagina-inhoud; laat een tekst-herschrijfskill alleen de formulering verbeteren, niet de feiten veranderen.
 - Gebruik de beste rechtmatig bruikbare afbeeldingen op passende resolutie. Geef beelden beschrijvende alt-tekst, afmetingen en lazy loading onder de eerste schermhoogte. Documenteer herkomst en beperkingen.
 - Houd contact bereikbaar. Maak demoformulieren duidelijk herkenbaar als demo en verstuur zonder backend geen gegevens. Zet conceptstatus zichtbaar bovenaan en onderaan; zet demo's op `noindex` tenzij de gebruiker anders vraagt.
-- Gebruik animatie alleen voor een duidelijk doel en respecteer `prefers-reduced-motion`. Kies één animatiesysteem per componentboom; voeg geen bibliotheken toe puur voor effect. Kijk eerst of bestaande projectmiddelen volstaan.
+- Bouw met **TasteSkill / `design-taste-frontend`**. Gebruik **`emilkowal-animations`** (of beschikbaar equivalent) voor timing en feedback, en **`find-animation-opportunities` → `review-animations`** indien aanwezig. Kies bewust uit **GSAP, Lenis, Motion, anime.js, Magic UI, Kokonut UI, React Bits en Bklit** volgens de beslisregels in [references/design-and-build.md](references/design-and-build.md). Gebruik één animatie-engine per componentboom, maximaal 2–3 opvallende effecten per pagina en respecteer `prefers-reduced-motion`.
 - Houd feitelijke claims, echte klantreacties en verplichte bronvermelding intact. Zet geen onbevestigd sociaal profiel online.
 
 ## 4. Controleer
 
-- Controleer desktop en mobiel, echte content, contrast, toetsenbordfocus, menu, formulieren, links, afbeeldingen, console en ontbrekende assets. Controleer lichte en donkere weergave als de demo beide heeft. Los gevonden fouten op voordat je publiceert.
+- Doe de **TasteSkill preflight** en controleer tegen **Vercel Web Interface Guidelines**. Gebruik **Playwright CLI** of de beschikbare browserautomatisering voor desktop en mobiel, echte content, contrast, toetsenbordfocus, menu, formulieren, links, afbeeldingen, console en ontbrekende assets. Controleer lichte en donkere weergave als de demo beide heeft. Los gevonden fouten op voordat je publiceert.
 - Het meegeleverde script `scripts/live_check.py` controleert een live URL op 1440 en 375 pixels, elk in licht en donker, en bewaart screenshots plus `report.json`. Voer vanaf de skillmap uit: `python3 scripts/live_check.py https://voorbeeld.nl --out qa-output`. Installeer Python Playwright en Chromium als ze ontbreken; het script zelf verandert de website niet.
 - Controleer daarnaast handmatig wat het script niet kan bewijzen: of claims kloppen, of de beste foto gekozen is, of het formulier werkelijk niets verstuurt en of de demo de juiste indruk geeft.
 
