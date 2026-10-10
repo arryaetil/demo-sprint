@@ -31,7 +31,7 @@ Lees [references/design-and-build.md](references/design-and-build.md) wanneer je
 ## 4. Controleer
 
 - Controleer desktop en mobiel, echte content, contrast, toetsenbordfocus, menu, formulieren, links, afbeeldingen, console en ontbrekende assets. Controleer lichte en donkere weergave als de demo beide heeft. Los gevonden fouten op voordat je publiceert.
-- Het meegeleverde script `scripts/live_check.py` controleert een live URL op 1440 en 375 pixels, elk in licht en donker, en bewaart screenshots plus `report.json`. Gebruik: `python3 scripts/live_check.py https://voorbeeld.nl --out /pad/naar/qa`. Installeer Python Playwright en Chromium als ze ontbreken; het script zelf verandert de website niet.
+- Het meegeleverde script `scripts/live_check.py` controleert een live URL op 1440 en 375 pixels, elk in licht en donker, en bewaart screenshots plus `report.json`. Voer vanaf de skillmap uit: `python3 scripts/live_check.py https://voorbeeld.nl --out qa-output`. Installeer Python Playwright en Chromium als ze ontbreken; het script zelf verandert de website niet.
 - Controleer daarnaast handmatig wat het script niet kan bewijzen: of claims kloppen, of de beste foto gekozen is, of het formulier werkelijk niets verstuurt en of de demo de juiste indruk geeft.
 
 ## 5. Lever op
@@ -40,4 +40,4 @@ Lees [references/design-and-build.md](references/design-and-build.md) wanneer je
 - Publiceer op Railway wanneer de huidige opdracht of eerdere toestemming dat omvat. Gebruik de Railway-tooling die in de omgeving beschikbaar is, controleer project en service, en verifieer de uiteindelijke URL. Publiceer geen geheimen of tokens in repo of logs.
 - Rapporteer kort wat af is, waar de preview staat, welke bronnen/beelden toestemming of credit vereisen en welke punten nog door de eigenaar bevestigd moeten worden. Vermeld bij een concept uitdrukkelijk dat het geen officiële website is.
 
-Deze workflow komt uit Arrya's oorspronkelijke notities. [references/design-and-build.md](references/design-and-build.md) bewaart de specifieke ontwerp- en toolkeuzes; de opdracht van de gebruiker gaat voor.
+Deze workflow komt uit projectnotities. [references/design-and-build.md](references/design-and-build.md) bewaart de specifieke ontwerp- en toolkeuzes; de opdracht van de gebruiker gaat voor.
