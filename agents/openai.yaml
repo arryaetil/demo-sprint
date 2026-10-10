@@ -1,0 +1,4 @@
+interface:
+  display_name: "Demo Sprint"
+  short_description: "Maak en controleer overtuigende bedrijfsdemo's"
+  default_prompt: "Gebruik demo-sprint om deze bedrijfswebsite te onderzoeken en een passende demo op te leveren."
