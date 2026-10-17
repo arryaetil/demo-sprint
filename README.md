@@ -10,7 +10,7 @@ De workflow staat in [SKILL.md](SKILL.md). Gebruik [ontwerp en libraries](refere
 2. Onderzoek met Refero echte stijl- en schermreferenties, inspecteer beelden en leg één passende hoofdrichting vast in een reference lock. Lees de passende designskills en maak een eigen ontwerpsysteem.
 3. Bouw tot die referentierichting zichtbaar terugkomt en voeg **minstens één betekenisvolle, geteste interactie** toe. Gebruik component- en animatielibraries waar ze functioneel passen. Voor een productieproject maak je klantcontent daadwerkelijk bewerkbaar via een passende beheerroute.
 4. Test de interface, formulieren en mobiele weergave. Doe **daarna altijd de SEO-eindronde**; bij een demo blijft `noindex` intact.
-5. Lever preview, bron- en beeldlijst, QA/SEO-rapport en zo nodig een beheerinstructie op. Publicatie en outreach volgen de opdracht.
+5. Lever preview, bron- en beeldlijst, QA/SEO-rapport en zo nodig een beheerinstructie op. Bij outreach: onderzoek elk bedrijf apart, schrijf met `humanizer` een persoonlijke mail en toon de volledige tekst eerst aan de opdrachtgever. Publicatie en verzending volgen de opdracht.
 
 ## Ontwerpworkflow
 
