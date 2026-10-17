@@ -1,4 +1,4 @@
 interface:
   display_name: "Demo Sprint"
-  short_description: "Maak en controleer overtuigende bedrijfsdemo's"
-  default_prompt: "Gebruik demo-sprint om deze bedrijfswebsite te onderzoeken en een passende demo op te leveren."
+  short_description: "Bouw bedrijfswebsites van onderzoek tot SEO"
+  default_prompt: "Gebruik demo-sprint om deze bedrijfswebsite vanaf nul of als herontwerp te onderzoeken, ontwerpen, bouwen, controleren en met een SEO-eindronde op te leveren."

@@ -1,8 +1,16 @@
 # demo-sprint
 
-Herbruikbare skill voor het onderzoeken, ontwerpen, controleren en opleveren van website-demo's voor kleine bedrijven. De repository werkt op verschillende computers met Codex of Claude Code; er zijn geen gebruikers- of projectpaden vastgelegd.
+Herbruikbare skill om een bedrijfswebsite vanaf nul te bouwen of een bestaande website te herontwerpen: onderzoek, echte content, ontwerp, bouw, browsercontrole, beheerbare productie en een vaste SEO-eindronde. De repository werkt op verschillende computers met Codex of Claude Code; er zijn geen gebruikers- of projectpaden vastgelegd.
 
-De skill staat in [SKILL.md](SKILL.md). Uitgebreidere ontwerpkeuzes staan in [references/design-and-build.md](references/design-and-build.md). De optionele live-controle staat in [scripts/live_check.py](scripts/live_check.py).
+De workflow staat in [SKILL.md](SKILL.md). Gebruik [ontwerp en libraries](references/design-and-build.md), [productie en bewerkbare content](references/production-and-content.md) en [de verplichte SEO-eindronde](references/seo-final-pass.md) als uitvoerbare handleidingen. De optionele live-controle staat in [scripts/live_check.py](scripts/live_check.py).
+
+## Van begin tot eind
+
+1. Bepaal of het een demo of productieproject is, onderzoek de bedrijfssite en verzamel verifieerbare feiten. Gebruik beschikbare foto's van het bedrijf eerst; stock alleen als die ontbreken of op verzoek.
+2. Onderzoek met Refero echte stijl- en schermreferenties, inspecteer beelden en leg één passende hoofdrichting vast in een reference lock. Lees de passende designskills en maak een eigen ontwerpsysteem.
+3. Bouw tot die referentierichting zichtbaar terugkomt en voeg **minstens één betekenisvolle, geteste interactie** toe. Gebruik component- en animatielibraries waar ze functioneel passen. Voor een productieproject maak je klantcontent daadwerkelijk bewerkbaar via een passende beheerroute.
+4. Test de interface, formulieren en mobiele weergave. Doe **daarna altijd de SEO-eindronde**; bij een demo blijft `noindex` intact.
+5. Lever preview, bron- en beeldlijst, QA/SEO-rapport en zo nodig een beheerinstructie op. Publicatie en outreach volgen de opdracht.
 
 ## Ontwerpworkflow
 
@@ -29,6 +37,7 @@ Dit is de installatielijst voor jou en je partner. Een link opent de **bronrepos
 | `emilkowal-animations` | [Emil Kowalski's publieke skillverzameling](https://github.com/emilkowalski/skills) | De lokaal aanwezige skill is een aparte variant; de exacte publieke bron daarvan is niet vastgesteld. Gebruik de gelinkte `emil-design-eng` als verifieerbaar alternatief. |
 | `web-design-guidelines` | [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills/tree/main/skills/web-design-guidelines) + [richtlijnen](https://github.com/vercel-labs/web-interface-guidelines) | UI-, toegankelijkheids- en interactiecontrole. |
 | `playwright-cli` | [microsoft/playwright-cli](https://github.com/microsoft/playwright-cli/tree/main/skills/playwright-cli) | Browsercontrole en screenshots. |
+| `geo-optimizer-skill` | [Auriti-Labs/geo-optimizer-skill](https://github.com/Auriti-Labs/geo-optimizer-skill) | Aanvullende audit voor AI-vindbaarheid in de laatste ronde, als beschikbaar. |
 
 ## Referenties en MCP
 
@@ -37,8 +46,10 @@ Dit is de installatielijst voor jou en je partner. Een link opent de **bronrepos
 | Refero MCP | [Refero MCP](https://refero.design/mcp) voor zoekbare stijlen en schermen. |
 | details.so | [details.so](https://details.so/) voor hero, navigatie, footer en overgangen. |
 | Design Spells | [designspells.com](https://designspells.com/) voor een passend interactiedetail. |
+| Google Search Console MCP | [AminForou/mcp-gsc](https://github.com/AminForou/mcp-gsc) voor echte zoek- en indexgegevens van een geverifieerde site. |
+| Open SEO | [every-app/open-seo](https://github.com/every-app/open-seo) voor aanvullende SEO-audits en onderzoek; zelf hosten kan een betaalde data-API vereisen. |
 
-Dit zijn diensten of inspiratiebronnen, geen meegeleverde GitHub-skills. De stappen voor Refero staan in [references/design-and-build.md](references/design-and-build.md).
+Dit zijn diensten, MCP's of inspiratiebronnen, geen meegeleverde GitHub-skills. De stappen voor Refero staan in [references/design-and-build.md](references/design-and-build.md). De SEO-toepassing en voorwaarden staan in [references/seo-final-pass.md](references/seo-final-pass.md).
 
 ## Libraries en componenten: bronrepositories
 
@@ -56,7 +67,9 @@ Dit zijn diensten of inspiratiebronnen, geen meegeleverde GitHub-skills. De stap
 
 De volledige [ontwerpstappen en beslisregels](references/design-and-build.md) vertellen wanneer je deze middelen inzet. GitHub, Lovable en Railway zijn platforms voor overdracht en publicatie, geen skills of componentlibraries. Controleer per computer welke externe skills geïnstalleerd zijn; zeg niet dat een ontbrekende skill is uitgevoerd.
 
-De skill kan automatisch worden gekozen wanneer je om een pitchdemo of groot herontwerp vraagt, of expliciet worden aangeroepen als `demo-sprint`. Publicatie naar GitHub of Railway gebeurt alleen binnen de toestemming van de lopende opdracht.
+De skill kan automatisch worden gekozen wanneer je om een nieuwe bedrijfswebsite, pitchdemo of groot herontwerp vraagt, of expliciet worden aangeroepen als `demo-sprint`. Publicatie naar GitHub of Railway gebeurt alleen binnen de toestemming van de lopende opdracht.
+
+De skillstructuur is aangescherpt met de [Anthropic skill-creator-richtlijnen](https://github.com/anthropics/skills/blob/main/skills/skill-creator/SKILL.md): de korte hoofdinstructie verwijst naar gerichte referenties en noemt toetsbare uitkomsten. De lokale skillvalidatie controleert de opbouw; een echte website moet daarna nog in de browser worden beoordeeld.
 
 ## Lokaal gebruiken
 

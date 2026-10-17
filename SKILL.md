@@ -1,57 +1,46 @@
 ---
 name: demo-sprint
-description: Onderzoek een bestaand klein bedrijf en maak of verbeter een overtuigende website-demo met echte inhoud, zorgvuldig ontwerp, browsercontrole en optionele Railway-publicatie. Gebruik bij een klant-URL met verzoeken als "maak een demo", "verbeter deze website" of bij werk aan een bestaande pitchdemo. Niet voor gewone onderhoudstaken zonder demo- of herontwerpdoel.
+description: Onderzoek, ontwerp, bouw en controleer een complete bedrijfswebsite vanaf nul of op basis van een bestaande site. Gebruik bij website-demo's, grote herontwerpen en productieklare bedrijfssites; inclusief echte content en beelden, Refero-onderzoek, passende designskills, bewerkbare content waar nodig, browsercontrole en een vaste SEO-eindronde. Niet voor kleine onderhoudswijzigingen.
 ---
 
 # Demo Sprint
 
-Maak een demo die een eigenaar kan beoordelen: herkenbaar bedrijf, echt werk, duidelijke contactroute, één heldere ontwerpgedachte en een werkende preview. Gebruik dit als workflow, niet als toestemming om accounts, domeinen of live websites te wijzigen. Volg de actuele opdracht, bestaande afspraken en projectinstructies.
+Bouw een website die bij het echte bedrijf past en door de opdrachtgever beoordeeld kan worden. Deze skill is een workflow, geen automatische toestemming voor publicatie, accountwijzigingen of berichten aan derden. Volg de actuele opdracht en projectinstructies. Gebruik externe skills, MCP's en libraries alleen als ze beschikbaar en passend zijn; zeg eerlijk wanneer een middel niet is gebruikt. De [README](README.md) geeft van elk middel de bronrepository.
 
-De [README](README.md#alle-skills-en-hun-repositories) bevat de bronrepository voor elke genoemde externe skill en library, zodat deze workflow op een andere computer te installeren is.
+## 1. Bepaal doel en oplevervorm
 
-## 1. Onderzoek de bron
+- Bepaal of de opdracht een nieuwe site, herontwerp of pitchdemo is. Leg doelgroep, conversiedoel, pagina's, merk, budget, gewenste preview en publicatiekanaal vast. Maak een eerste preview vóór outreach of livegang als de opdrachtgever die wil zien.
+- Kies expliciet tussen **demo** en **productie**. Een demo krijgt duidelijke conceptstatus, `noindex` en geen schijnbaar werkend formulier. Productie vereist werkende contactstromen, inhoudsbeheer waar gevraagd, beheerrollen, privacy, beveiliging en herstelbaarheid. Lees voor productie [references/production-and-content.md](references/production-and-content.md).
+- Onderzoek bij een bestaande site de relevante pagina's, socials, diensten, werkgebied, reviews, team, prijzen, projecten, contact en juridische informatie. Bij een nieuw bedrijf vraag je ontbrekende feiten of markeer je ze als concept. Houd bronlinks en onzekerheden bij.
 
-- Bekijk de bestaande website en alle relevante paginatypen: diensten, prijzen/PDF's, werkgebied, reviews, contact, openingstijden, team, projecten en juridische pagina's. Noteer bronlinks en onzekerheden. Controleer veranderlijke feiten opnieuw vlak voor publicatie.
-- Maak een beeldinventaris met herkomst, kwaliteit, gebruiksrecht en functie. Onderscheid echte projectfoto's, stockbeeld en AI-bewerkingen. Hergebruik bedrijfsfoto's alleen met toestemming; respecteer licenties en verplichte naamsvermelding. Verwijder geen watermerken van materiaal zonder gebruiksrecht.
-- Neem geen fictieve reviews, scores, aantallen, certificaten, garanties of prijzen op. Een gemiddelde beoordeling zegt niets over de sterren van een individuele review. Vraag bij tegenstrijdige brongegevens om bevestiging of label een waarde als indicatief.
-- Bewaar de echte contactgegevens en links naar privacy- en cookiepagina's. Controleer of telefoon-, e-mail- en sociale profielen bij dit bedrijf horen.
+## 2. Verzamel echte inhoud en beeld
 
-## 2. Kies de richting
+- Maak eerst een inventaris van **foto's op de eigen bedrijfssite** en door de eigenaar aangeleverde beelden. Kies die voor diensten, projecten en over-ons als de kwaliteit en rechten volstaan. Gebruik stock of gegenereerd sfeerbeeld alleen als er geen bruikbaar echt beeld is, of als de opdrachtgever dat wil. Vermeld het onderscheid in de beeldlijst.
+- Controleer gebruiksrechten, licenties en verplichte credits. Verwijder geen watermerken van materiaal zonder gebruiksrecht. Maak geen verzonnen reviews, beoordelingen, projectresultaten, garanties, keurmerken, prijzen, locaties of contactgegevens. Verifieer social links en veranderlijke gegevens opnieuw voor publicatie.
+- Schrijf voor echte bezoekers en gebruik [`humanizer`](README.md#alle-skills-en-hun-repositories) voor natuurlijke formulering zonder feiten te veranderen. Bewaar per claim, review en foto de herkomst. Gebruik alleen echte toestemming voor hergebruik of publicatie.
 
-Toon eerst een korte **design read** met vier antwoorden: (1) wat moet de demo overbrengen, (2) wie is het bedrijf en wie zijn de klanten, (3) drie sfeerwoorden, (4) de ontwerpkeuze met TasteSkill-dials `VARIANCE`, `MOTION` en `DENSITY`. Geef concrete keuzes voor fotografie, typografie, kleur en compositie.
+## 3. Onderzoek ontwerp vóór implementatie
 
-**Referentieonderzoek is een verplichte ontwerpstap.** Lees [references/design-and-build.md](references/design-and-build.md) volledig voordat je een nieuwe richting of groot herontwerp uitwerkt. Gebruik de volgende bronnen en noteer per gekozen patroon welke referentie welk ontwerpbesluit beïnvloedt:
+Lees [references/design-and-build.md](references/design-and-build.md) volledig. Maak een korte design read: doel, doelgroep, drie sfeerwoorden en concrete keuzes voor fotografie, typografie, kleur, compositie en de TasteSkill-dials `VARIANCE`, `MOTION`, `DENSITY`.
 
-- **TasteSkill / `design-taste-frontend`** voor design read, dials, ontwerpkritiek en de preflightcheck.
-- **`design-md-library` en Awesome Design** (`awesome-design-md` en `awesome-design-skills`) om één of twee passende `DESIGN.md`/`SKILL.md` referenties te lezen en om te zetten naar een eigen, merkgebonden ontwerpsysteem.
-- **Refero MCP** voor stijlrichtingen en sectiepatronen: zoek met `refero_search_styles` vanuit 3–5 invalshoeken en bekijk de beste 3 met `refero_get_style`; zoek schermen per relevante sectie met `refero_search_screens` en bekijk 3–6 volledige voorbeelden met `refero_get_screen_image`.
-- **details.so** voor hero, navigatie, footer en overgangen; **designspells.com** voor één zorgvuldig gekozen interactiedetail.
-- **`image-to-code`** wanneer de opdrachtgever een concrete visuele referentie aanlevert en die nauwkeurig vertaald moet worden naar de demo.
+- **Refero is de primaire referentiebron en een echte bouwvoorwaarde.** Als de MCP beschikbaar is, voer de zoekopdrachten en inspectie uit vóór de eerste layout. Zoek stijlen vanuit 3–5 invalshoeken, bekijk passende stijlen, zoek schermen voor de benodigde secties en inspecteer 3–6 volledige voorbeelden. Kies één dominante referentie die bij dit bedrijf en zijn klanten past. Leg in een *reference lock* de bron-URL/ID, passende eigenschappen, concrete layout/typografie/fotografierollen en de aanpassing aan dit merk vast. Bouw tot de visuele kwaliteit en compositie van die richting overtuigend terugkomen; vergelijk screenshots en verbeter afwijkingen. Neem geen beschermd logo, tekst, foto of volledige unieke layout over. Als stijlen niets opleveren, probeer schermen; als Refero werkelijk niet beschikbaar is, gebruik verifieerbare publieke referenties en meld dat. Claim nooit onderzoek dat niet is uitgevoerd.
+- Gebruik TasteSkill / `design-taste-frontend`, `design-md-library` en Awesome Design voor een samenhangend, bedrijfseigen ontwerpsysteem. Bekijk details.so en Design Spells voor gerichte afwerking. Gebruik `image-to-code` wanneer een concrete beeldreferentie vertaald moet worden. Maak geen referentiebeelden als de opdrachtgever die niet wil.
+- Controleer of het bedrijf een eigen logo heeft. Bij een ontbrekend logo en opdracht voor merkontwikkeling gebruik je de [logo-design-skill](https://github.com/kaankiziltug/logo-design-skill/tree/main/skills/logo-design); presenteer het als concept tot goedkeuring. Kopieer geen bestaand merk of website.
 
-Kopieer geen site of merkstijl letterlijk.
+## 4. Bouw met passende techniek
 
-### Logo wanneer het bedrijf er geen heeft
+- Behoud een bruikbare bestaande stack. Kies bij nieuwbouw de eenvoudigste stack die de gevraagde inhoud, prestaties, beheerbaarheid en kosten draagt. Maak de route naar contact helder en de pagina's mobiel bruikbaar. Gebruik de ontwerpbeslissingen werkelijk in de interface.
+- Kies uit Magic UI, Kokonut UI, React Bits, Bklit, GSAP, Lenis, Motion en anime.js **alleen wanneer hun concrete component of effect iets toevoegt**. De beslisregels en bronlinks staan in [references/design-and-build.md](references/design-and-build.md). Beperk opvallende animaties en respecteer verminderde beweging.
+- **Elke nieuwe website of grote redesign krijgt minstens één betekenisvol dynamisch element.** Kies het op basis van echte content en het gebruiksdoel, bijvoorbeeld een projectfilter, voor/na-schuif, dienstenkiezer, interactieve werkgebiedkaart of nuttige formulierstap. Een hover, autoplay-effect of decoratieve animatie telt niet. Maak het bedienbaar met toetsenbord en op mobiel; test ook de lege en fouttoestand. Is er geen geschikte inhoud, maak dan een kleine maar nuttige interactie rond de contactroute in plaats van een verzonnen project of claim. Documenteer welk probleem het element oplost.
+- Maak gevraagde dynamiek echt: definieer bewerkbare velden voor tekst, diensten, projecten, foto's, reviews en SEO, koppel ze aan een CMS of beheeromgeving en verifieer aanmaken, wijzigen en verwijderen via de gepubliceerde site. Zet klantcontent niet alleen in code als de klant zelf moet beheren. Volg [references/production-and-content.md](references/production-and-content.md).
+- Bouw formulieren, uploads en integraties pas als de dataflow, toegang en privacy duidelijk zijn. Bewaar geheimen buiten de repository.
 
-Controleer eerst of er een bruikbaar eigen logo is. Is er geen logo of alleen een zwak sjabloonlogo en valt een nieuw logo binnen de opdracht, gebruik dan de **[`logo-design`-skill](https://github.com/kaankiziltug/logo-design-skill/tree/main/skills/logo-design)**. Maak drie zwart-witconcepten, controleer de SVG's en toon een conceptoverzicht. Wacht op een keuze voordat je kleurvarianten, favicon en gebruiksgids maakt of het logo in de demo als merk inzet. Houd het zichtbaar een concept totdat de eigenaar het goedkeurt. Als `logo-design` op de computer niet is geïnstalleerd, installeer hem uit die repository als de omgeving en opdracht dat toelaten; doe niet alsof de skill aanwezig is.
+## 5. Controleer en doe altijd de SEO-eindronde
 
-## 3. Bouw de demo
+- Controleer met TasteSkill preflight, Vercel Web Interface Guidelines en Playwright CLI of beschikbare browsertools de echte desktop- en mobiele weergave, links, menu, focus, formulieren, **het dynamische element**, afbeeldingen, console en prestaties. Vergelijk de render met de Refero reference lock en corrigeer visuele drift. Test CMS-bewerkingen in productieprojecten. Het optionele `scripts/live_check.py` maakt screenshots en een rapport; zie [README](README.md#lokaal-gebruiken).
+- **Doe na inhoud, ontwerp en functionele controle altijd de SEO-eindronde in [references/seo-final-pass.md](references/seo-final-pass.md).** Controleer indexeerstatus, titels, beschrijvingen, koppen, interne links, beeldtekst, lokale gegevens, structured data, sitemap, prestaties en meetbaarheid. Bij een demo blijft `noindex` staan; leg productie-indexering als aparte beslissing vast.
+- Gebruik in die ronde [mcp-gsc](https://github.com/AminForou/mcp-gsc) voor echte Search Console-data **als** een geverifieerde property en bevoegde toegang bestaan; [open-seo](https://github.com/every-app/open-seo) voor extra onderzoek/audits **als** het beschikbaar en zinvol is; en [geo-optimizer-skill](https://github.com/Auriti-Labs/geo-optimizer-skill) voor een AI-vindbaarheidsaudit **als** de tool beschikbaar is. Deze middelen zijn geen vervanging voor de basiscontrole. Documenteer welke ervan daadwerkelijk zijn gebruikt en welke toegang ontbrak.
 
-- Werk in de bestaande stack als er een project is. Maak echte, taakgerichte pagina-inhoud; gebruik **`humanizer`** voor natuurlijkere formulering zonder feiten te veranderen.
-- Gebruik de beste rechtmatig bruikbare afbeeldingen op passende resolutie. Geef beelden beschrijvende alt-tekst, afmetingen en lazy loading onder de eerste schermhoogte. Documenteer herkomst en beperkingen.
-- Houd contact bereikbaar. Maak demoformulieren duidelijk herkenbaar als demo en verstuur zonder backend geen gegevens. Zet conceptstatus zichtbaar bovenaan en onderaan; zet demo's op `noindex` tenzij de gebruiker anders vraagt.
-- Bouw met **TasteSkill / `design-taste-frontend`**. Gebruik **`emilkowal-animations`** (of beschikbaar equivalent) voor timing en feedback, en **`find-animation-opportunities` → `review-animations`** indien aanwezig. Kies bewust uit **GSAP, Lenis, Motion, anime.js, Magic UI, Kokonut UI, React Bits en Bklit** volgens de beslisregels in [references/design-and-build.md](references/design-and-build.md). Gebruik één animatie-engine per componentboom, maximaal 2–3 opvallende effecten per pagina en respecteer `prefers-reduced-motion`.
-- Houd feitelijke claims, echte klantreacties en verplichte bronvermelding intact. Zet geen onbevestigd sociaal profiel online.
+## 6. Lever op
 
-## 4. Controleer
-
-- Doe de **TasteSkill preflight** en controleer tegen **Vercel Web Interface Guidelines**. Gebruik **Playwright CLI** of de beschikbare browserautomatisering voor desktop en mobiel, echte content, contrast, toetsenbordfocus, menu, formulieren, links, afbeeldingen, console en ontbrekende assets. Controleer lichte en donkere weergave als de demo beide heeft. Los gevonden fouten op voordat je publiceert.
-- Het meegeleverde script `scripts/live_check.py` controleert een live URL op 1440 en 375 pixels, elk in licht en donker, en bewaart screenshots plus `report.json`. Voer vanaf de skillmap uit: `python3 scripts/live_check.py https://voorbeeld.nl --out qa-output`. Installeer Python Playwright en Chromium als ze ontbreken; het script zelf verandert de website niet.
-- Controleer daarnaast handmatig wat het script niet kan bewijzen: of claims kloppen, of de beste foto gekozen is, of het formulier werkelijk niets verstuurt en of de demo de juiste indruk geeft.
-
-## 5. Lever op
-
-- Geef een lokale preview zodat de gebruiker kan meekijken. Zet code alleen naar een bestaande gekoppelde GitHub-branch als dat bij het project hoort; herschrijf nooit gepushte geschiedenis.
-- Publiceer op Railway wanneer de huidige opdracht of eerdere toestemming dat omvat. Gebruik de Railway-tooling die in de omgeving beschikbaar is, controleer project en service, en verifieer de uiteindelijke URL. Publiceer geen geheimen of tokens in repo of logs.
-- Rapporteer kort wat af is, waar de preview staat, welke bronnen/beelden toestemming of credit vereisen en welke punten nog door de eigenaar bevestigd moeten worden. Vermeld bij een concept uitdrukkelijk dat het geen officiële website is.
-
-Deze workflow komt uit projectnotities. [references/design-and-build.md](references/design-and-build.md) bewaart de specifieke ontwerp- en toolkeuzes; de opdracht van de gebruiker gaat voor.
+Toon een lokale of deelbare preview, de Refero reference lock met concrete links, het gekozen dynamische element, gebruikte bronnen en beeldrechten, de QA- en SEO-uitkomsten, en open vragen voor de eigenaar. Bij productie: lever een korte beheerinstructie en test een wijziging in de beheeromgeving. Publiceer op GitHub/Railway/een andere host alleen binnen de gegeven toestemming en verifieer de uiteindelijke URL. Doe geen outreach zonder expliciete opdracht. Houd een demo herkenbaar als concept.
